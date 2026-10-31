@@ -32,8 +32,13 @@ if someone trusts it enough to make a decision with it.
   routing what an NPC notices (+0.35 on 116 situations, including traps where the obvious keyword points the wrong way).
 - **An NPC belief system, proven inside Unreal Engine 5.3**: the in-engine run matched my Python prediction within
   about a second, and the stress test found (and documented) exactly where it hits its limit.
-- **The fine-tuned model I didn't ship**: it scored well on the metric it was trained against, but made real decisions
-  worse, so I rebuilt the metric instead of shipping it.
+- **[reasoning-assay](https://github.com/DonMerlin77/reasoning-assay)**: does a model change its answer when a new fact
+  actually defeats its position, and hold when it doesn't? Built to resist shortcuts, with its limits stated up front.
+- **[shortcut-gate](https://github.com/DonMerlin77/shortcut-gate)**: catches label-leaking surface shortcuts in
+  preference-training data before they reach a training run.
+- **[The fine-tuned model I didn't ship](https://github.com/DonMerlin77/dv-dpo)**: it scored well on the metric it was
+  trained against, but a blind panel on 80 real decisions said it made them worse, so I rebuilt the metric instead of
+  shipping it.
 - **My own tests**: I've caught tests of mine passing without testing anything. Every result I quote traces back to a
   script that reproduces it, failures included.
 
@@ -42,14 +47,15 @@ if someone trusts it enough to make a decision with it.
 - **Hearsay** *(private, available on request)*: game NPCs that believe things based on who told them, where the
   story started, and whether that source held up. Built to plug into Unreal Engine. It's also turning into
   provenance-aware memory for AI agents.
-- **[Continuum Goods AI stack](https://github.com/DonMerlin77/continuum-agents)**: a multi-agent system that runs a
-  live Shopify store (pricing, inventory, fulfillment, research, listings, marketing), with agent behavior tuned by
-  editing plain-text "brain" files. The link is a public slice of it.
-- **Orlog** ([orlog.fyi](https://orlog.fyi)): a live AI decision tool with subscriptions that routes a question
-  through several models. When I tested it honestly it tied a well-written single prompt, so I describe its value as
-  making a good prompt easy, not as being smarter.
-- **[PersonaVid](https://github.com/DonMerlin77/personavid)**: an AI video personalization pipeline, from footage
-  cataloging and shot direction to GPU generation on Modal, compositing, and publishing.
+- **[Continuum Goods AI stack](https://github.com/DonMerlin77/continuum-agents)**: a multi-agent system built to run my
+  Shopify store (pricing, inventory, fulfillment, research, listings, marketing), with agent behavior tuned by editing
+  plain-text "brain" files. Running it taught me where self-checking agents still miss things; the README has the
+  honest version.
+- **[Orlog](https://github.com/DonMerlin77/orlog)**: an AI decision council I shipped as a web app with subscriptions
+  (now retired). When I tested it honestly it tied a well-written single prompt, so I describe its value as making a
+  good prompt easy, not as being smarter.
+- **[PersonaVid](https://github.com/DonMerlin77/personavid)**: an AI video pipeline, from footage cataloging and shot
+  direction to GPU generation on Modal, scoring, and export (paused since August 2026).
 
 ## Tools I work with
 
@@ -64,8 +70,9 @@ Claude Code · Git / GitHub · Streamlit
   recovery efficiency across industrial processing stages.
 - **[chicago-taxi-sql-analysis](https://github.com/DonMerlin77/chicago-taxi-sql-analysis)**: SQL analysis of Chicago
   ride data.
-- **[Used Car Price Explorer](https://tripleten-project-sprint-4.onrender.com)**: a live Streamlit app on US vehicle
-  listings and what drives price.
+- **[Used Car Price Explorer](https://github.com/DonMerlin77/tripleten_project)**: a Streamlit app on US used-car
+  listings ([live](https://tripleten-project-sprint-4.onrender.com)).
+- **[InstaCartEval](https://github.com/DonMerlin77/InstaCartEval)**: cleaning and exploring Instacart grocery orders.
 
 ## Connect
 
